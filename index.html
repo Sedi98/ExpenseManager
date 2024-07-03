@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Expense manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expense manager</h2>
+
+      <div class="btnsDiv">
+        <button class="btns addExpense">Add expense</button>
+        <button class="btns addEarning">Add earning</button>
+      </div>
+      <div class="inputSection">
+        <h3 class="typeText">Enter Amount</h3>
+        <div class="inputDiv">
+          <input
+            type="number"
+            name="numberInput"
+            id="numberInput"
+            class="input"
+          />
+          <div class="addBtn" onclick="addData()">
+            <i class="bx bx-plus-circle"></i>
+          </div>
+        </div>
+
+        <div class="addInputBtn">
+          <button class="addFiveBtn btnInput" onclick="addInputValue(5)">+5</button>
+          <button class="addTenBtn btnInput" onclick="addInputValue(10)">+10</button>
+          <button class="addFifteenBtn btnInput" onclick="addInputValue(15)">+15</button>
+          <button class="addTwentyBtn btnInput" onclick="addInputValue(20)">+20</button>
+          <button class="addFiftyBtn btnInput" onclick="addInputValue(50)">+50</button>
+          <button class="addHundredBtn btnInput" onclick="addInputValue(100)">+100</button>
+        </div>
+      </div>
+      <div class="cashContainer">
+        <p class="balance">Balance:0</p>
+        <p class="totalExpenseText">Total Expense: 0</p>
+        <p class="totalEarningText">Total Earning: 0</p>
+      </div>
+      <h2>Earnings</h2>
+      <hr />
+      <div class="earningsList"></div>
+      <h2>Expenses</h2>
+      <hr />
+      <div class="expenseList"></div>
+    </div>
+
+    <script src="./js/variables.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

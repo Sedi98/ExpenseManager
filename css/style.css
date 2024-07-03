@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #159957;
+  background: -webkit-linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #155799,
+    #159957
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  width: 60%;
+  height: 80%;
+}
+
+.inputSection {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.addBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+
+  padding: 0 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addBtn:hover {
+  color: #155799;
+}
+
+.btnsDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btns {
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.addExpense {
+  background-color: #cb4335;
+  color: #f2f2f2;
+}
+
+.addExpense:hover {
+  background-color: #943126;
+}
+
+.addEarning {
+  background-color: #3498db;
+  color: #f2f2f2;
+}
+
+.addEarning:hover {
+  background-color: #2471a3;
+}
+
+.earningsList,
+.expensesList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 30%;
+  overflow-y: auto;
+}
+
+.active {
+  background-color: green;
+}
+
+.cashContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.addInputBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.btnInput {
+  width: 100%;
+
+  background-color: #943126;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+
+
