@@ -44,14 +44,19 @@ function ListExpense() {
 
 saveBtn.addEventListener("click", () => {
   let value = numberInput.value;
-  if (isexpense) {
-    addData(value, "expense");
-    ListExpense();
+
+  if (value <= 0) {
+    alert("Enter valid amount");
   } else {
-    addData(value, "earning");
-    ListEarning();
+    if (isexpense) {
+      addData(value, "expense");
+      ListExpense();
+    } else {
+      addData(value, "earning");
+      ListEarning();
+    }
+    numberInput.value = "";
   }
-  numberInput.value = "";
 });
 
 addExpenseBtn.addEventListener("click", () => {
